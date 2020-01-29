@@ -6,7 +6,7 @@ env:
 install: 
   - curl -o terraform.zip https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip
   - unzip terraform.zip
-  - go get github.com/tomoasleep/tfnotify@fix-crash-on-travis-ci-not-pull-request-job
+  - go get github.com/mercari/tfnotify
 
 script:
   - ./terraform init
